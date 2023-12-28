@@ -17,17 +17,17 @@ const App = () => {
     },
   ];
 
-  const [activeTab, setActiveTab] = useState(tabsData[0].content);
+  const [activeTab, setActiveTab] = useState(tabsData[0]);
 
   return (
     <div>
       <ul>
         {tabsData.map((tab) => (
-          <li onClick={() => setActiveTab(tab.content)}>{tab.title}</li>
+          <li onClick={() => setActiveTab(tab)}>{tab.title}</li>
         ))}
       </ul>
       <div>
-        <p>{activeTab}</p>
+        <p>{activeTab.content}</p>
       </div>
     </div>
   );
