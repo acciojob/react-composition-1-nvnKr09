@@ -13,7 +13,7 @@ const App = () => {
     },
     {
       title: "Tab 3",
-      content: "This is the content for Tab 4.",
+      content: "This is the content for Tab 3.",
     },
   ];
 
