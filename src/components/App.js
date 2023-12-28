@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./../styles/App.css";
 
 const App = () => {
-  const tabsData = [
+  const tabData = [
     {
       title: "Tab 1",
       content: "This is content for Tab 1",
@@ -17,12 +17,12 @@ const App = () => {
     },
   ];
 
-  const [activeTab, setActiveTab] = useState(tabsData[0]);
+  const [activeTab, setActiveTab] = useState(tabData[0]);
 
   return (
     <div>
       <ul>
-        {tabsData.map((tab) => (
+        {tabData.map((tab) => (
           <li onClick={() => setActiveTab(tab)}>{tab.title}</li>
         ))}
       </ul>
